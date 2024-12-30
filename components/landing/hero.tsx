@@ -23,27 +23,6 @@ export const HeroSection = () => {
   return (
     <div className="flex flex-col items-center justify-center px-8 pt-32 text-center">
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="flex items-center justify-center"
-      >
-        <Link href="https://github.com/mckaywrigley/mckays-app-template">
-          <AnimatedGradientText>
-            🚀 <hr className="mx-2 h-4 w-px shrink-0 bg-gray-300" />
-            <span
-              className={cn(
-                `animate-gradient inline bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
-              )}
-            >
-              View the code on GitHub
-            </span>
-            <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-          </AnimatedGradientText>
-        </Link>
-      </motion.div>
-
-      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -55,7 +34,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
           className="text-balance text-6xl font-bold"
         >
-          Save time and start building.
+          Future Whatever
         </motion.div>
 
         <motion.div
@@ -64,7 +43,7 @@ export const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
           className="max-w-xl text-balance text-xl"
         >
-          Use Mckay's app template to save time and get started with your next
+          Use Future Whatever to save time and get started with your next
           project.
         </motion.div>
 
@@ -73,10 +52,7 @@ export const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
         >
-          <Link
-            href="https://github.com/mckaywrigley/mckays-app-template"
-            onClick={handleGetStartedClick}
-          >
+          <Link href="/signup" onClick={handleGetStartedClick}>
             <Button className="bg-blue-500 text-lg hover:bg-blue-600">
               <Rocket className="mr-2 size-5" />
               Get Started &rarr;
@@ -93,7 +69,7 @@ export const HeroSection = () => {
       >
         <HeroVideoDialog
           animationStyle="top-in-bottom-out"
-          videoSrc="https://www.youtube.com/embed/9yS0dR0kP-s"
+          videoSrc="https://www.youtube.com/embed/Ontdnj54wnI"
           thumbnailSrc="hero.png"
           thumbnailAlt="Hero Video"
         />
