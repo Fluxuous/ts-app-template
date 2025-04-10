@@ -15,6 +15,7 @@
     "analyze": "ANALYZE=true npm run build",
     "db:generate": "npx drizzle-kit generate",
     "db:migrate": "npx drizzle-kit migrate",
+    "db:setup": "tsx scripts/migrate.ts",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -90,6 +91,7 @@
     "postcss": "^8",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.1",
+    "tsx": "^4.19.3",
     "typescript": "^5"
   }
 }
